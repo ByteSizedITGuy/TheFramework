@@ -7,6 +7,7 @@
 ## What’s in this repo?
 
 - **`Framework.ps1`** – The runner. Must be launched **as SYSTEM**.  
+  - Set $originalScriptLocation = "URL to the script. Ex: https://github.com/ByteSizedITGuy/TheFramework/edit/main/script_name.ps1" either in your RMM's script/job, or at runtime.
   - Default: runs payload **as SYSTEM** using the **machine** secret.  
   - Optional: set `$runasuser = 'yes'` to launch the payload **as the logged-in user** using a **per-user** secret (seeded automatically from the machine secret).
 
